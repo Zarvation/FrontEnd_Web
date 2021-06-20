@@ -23,17 +23,17 @@ export default {
         }
     },
     created:function(){
-        this.username = localStorage.getItem('usr')
-        this.password = localStorage.getItem('pwd')
+        this.username = localStorage.getItem('user')
+        this.password = localStorage.getItem('pass')
     },
     methods:{
         saveBtn : function (){
-            localStorage.setItem('usr',this.username)
-            localStorage.setItem('pwd',this.password)
+            localStorage.setItem('user',this.username)
+            localStorage.setItem('pass',this.password)
         },
         deleteBtn : function (){
-            localStorage.removeItem('usr')
-            localStorage.removeItem('pwd')
+            localStorage.removeItem('user')
+            localStorage.removeItem('pass')
             this.username = ''
             this.password = ''
         }
